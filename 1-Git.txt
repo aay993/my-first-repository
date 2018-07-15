@@ -21,3 +21,8 @@ You can specify the current directory with .. So git add . will stage all files 
 
 You can stage changes to all tracked files (files you've added in a previous commit) with the -a option to git commit. So if you've changed two files that are already tracked, you can stage and commit the changes in a single command with git commit -a -m "My message". (This can also be shortened to git commit -am "My message".)
 To prevent accidentally committing the wrong files, the -a option does not add "untracked" files; files that have never been committed before. You'll need to stage those with git add first.
+
+To view changes before you stage them you can use git diff to "show differences". 
+
+You can view changes which have been staged, but not committed using: 
+git diff --staged 
