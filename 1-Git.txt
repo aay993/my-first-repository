@@ -36,3 +36,11 @@ git mv allows you to move files. If you saved a file with a wrong extension, you
 git mv example.txt example.html 
 
 The line above is effectively a rename. You can then commit the change as usual. 
+
+If you've staged a mistake, you can unstage with: 
+git reset HEAD <filename> 
+
+The above will demote the file from the staged area into the modified one. If you want to discard changes to a modified file: 
+git checkout -- <filename> 
+
+The above will overwrite the specified file with it's last committed version. This cannot be undone. 
