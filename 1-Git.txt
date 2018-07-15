@@ -56,3 +56,7 @@ Note the simple hashed algorithm (SHA) can be found by using "git log"
 
 If you wanted to undo the changes of just the most recent commit, you can use a shorthand to the above: 
 git revert HEAD 
+
+To make a copy of your project, you can clone it: 
+git clone <nameOfDirectoryYouWantToClone> <NameofCloneDirectory>
+
