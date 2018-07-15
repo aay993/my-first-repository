@@ -60,3 +60,23 @@ git revert HEAD
 To make a copy of your project, you can clone it: 
 git clone <nameOfDirectoryYouWantToClone> <NameofCloneDirectory>
 
+You can add links to other repositories (called remote repos) using: 
+git remote 
+
+The below takes an argument from the name of the remote repo you want to pull changes from. 
+git pull 
+
+To add a remote repo, you use the git remote add. The first parameter is the name you want, the second parameter is the location of the directory with the repo you want to link to. 
+git remote add <nameOfRemoteRepo> <URL of remote repo> 
+git remote add myGitClone ../myGitClone 
+
+To pull from the new remote repository you set up: 
+git pull myGitClone master 
+
+Master above specifies the branch to pull from. 
+
+To push changes you use the push command. -u stands for upstream - you want git to remember the repo and branch: 
+git push -u origin master
+
+To explain the above more: 
+That will push to the new origin remote from the master branch. The -u option will set up the git push command to push to the given remote from the given branch by default. 
