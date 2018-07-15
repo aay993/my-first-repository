@@ -26,3 +26,13 @@ To view changes before you stage them you can use git diff to "show differences"
 
 You can view changes which have been staged, but not committed using: 
 git diff --staged 
+
+Say you wanted to delete a file from your project, and you want to make this delete part of a commit. To do this, you use: 
+git rm <filename>
+
+In this way, you can "commit" a delete of a file to your repository. After you've done this, you can commit as usual. 
+
+git mv allows you to move files. If you saved a file with a wrong extension, you can type the name of the file you want to move, and the name of the file you want to move it to: 
+git mv example.txt example.html 
+
+The line above is effectively a rename. You can then commit the change as usual. 
