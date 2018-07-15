@@ -40,7 +40,19 @@ The line above is effectively a rename. You can then commit the change as usual.
 If you've staged a mistake, you can unstage with: 
 git reset HEAD <filename> 
 
-The above will demote the file from the staged area into the modified one. If you want to discard changes to a modified file: 
+The above will demote the file from the staged area into the modified one. 
+
+If you want to discard changes to a modified file: 
 git checkout -- <filename> 
 
 The above will overwrite the specified file with it's last committed version. This cannot be undone. 
+
+
+Let's say you've deleted a file by accident and need it back. You can actually "discard the delete" by using the checkout technique. In this way you're thinking of the delete as an unwanted modification to a file, and you can therefore overwrite that change with the last committed version using checkout: 
+git checkout -- <deletedFile>
+
+To use a particular commit (i.e. undo the changes of that particular commit), you can use git revert <commitSHA> 
+Note the simple hashed algorithm (SHA) can be found by using "git log" 
+
+If you wanted to undo the changes of just the most recent commit, you can use a shorthand to the above: 
+git revert HEAD 
