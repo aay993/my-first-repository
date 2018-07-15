@@ -13,6 +13,8 @@ git log
 You can see the new lines added using this command 
 git log -p 
 
+To get out of git log -p, you just have to press q. 
+
 If you pass a directory name to git add, it will stage all the files that directory contains: git add mydir
 
 You can specify the current directory with .. So git add . will stage all files in the current directory, and all its subdirectories.
