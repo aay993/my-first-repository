@@ -1,0 +1,8 @@
+To initialise git you use command: 
+git init 
+
+To add a file to the staging area you use the line below. Files have three states, modified, staged and committed. The below puts it in staging.
+git add <filename>
+
+You use git commit to commit a file. You need to provide a message alongside this every time you do it. You do this using -m and then a string followed by quotation marks: 
+git commit -m "Add main text page" 
